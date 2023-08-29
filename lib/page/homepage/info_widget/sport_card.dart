@@ -133,7 +133,7 @@ class SportCard extends StatelessWidget {
         onLongPress: SportSession().getPunch,
         child: MainPageCard(
           icon: Icons.run_circle,
-          text: "体育信息",
+          text: "体育打卡",
           children: [
             Expanded(
               child: Align(
@@ -142,7 +142,7 @@ class SportCard extends StatelessWidget {
                   text: TextSpan(
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onPrimaryContainer,
-                      fontSize: 20,
+                      fontSize: 24,
                     ),
                     children: punchData.value.situation == null
                         ? [

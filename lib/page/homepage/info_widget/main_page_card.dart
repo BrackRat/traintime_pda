@@ -28,21 +28,21 @@ class MainPageCard extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Icon(
-                  icon,
-                  color: Theme.of(context).colorScheme.onPrimaryContainer,
-                  size: 16,
-                ),
-                const SizedBox(width: 8),
                 Text(
                   text,
                   style: TextStyle(
                     fontSize: 16,
+                    fontWeight: FontWeight.bold,
                     textBaseline: TextBaseline.alphabetic,
                     color: Theme.of(context).colorScheme.onPrimaryContainer,
                   ),
                 ),
               ],
+            ),
+            Icon(
+              icon,
+              color: Theme.of(context).colorScheme.onPrimaryContainer,
+              size: 52,
             ),
             ...children,
           ],
